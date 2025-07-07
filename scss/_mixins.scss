@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 @mixin centralizado {
   display: flex;
   justify-content: center;
@@ -5,7 +7,7 @@
 }
 
 @mixin botao-primario {
-  background: $cor-primaria;
+  background: variaveis.$cor-primaria;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -15,6 +17,6 @@
   transition: background 0.3s ease;
 
   &:hover {
-    background: $cor-hover-botao;
+    background: variaveis.$cor-hover-botao;
   }
 }
