@@ -1,6 +1,49 @@
 @use 'variaveis';
 @use 'mixins';
 
+.header {
+  background: variaveis.$cor-primaria;
+  color: white;
+  padding: 1rem 0;
+
+  &__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.nav {
+  @include mixins.centralizado;
+  padding-block: 1rem;
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variaveis.$cor-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+
 .banner {
   background: linear-gradient(rgba(30,144,255,0.9), rgba(30,144,255,0.7)), url('../banner.jpg') center/cover no-repeat;
   color: white;
