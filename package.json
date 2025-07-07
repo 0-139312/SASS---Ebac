@@ -1,0 +1,16 @@
+{
+  "name": "sass-ebac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass scss/estilos.scss css/estilos.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
+

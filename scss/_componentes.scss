@@ -1,0 +1,88 @@
+.banner {
+  background: linear-gradient(rgba(30,144,255,0.9), rgba(30,144,255,0.7)), url('../banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 15vh 2rem;
+
+  &__title {
+    font-size: 2.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.section {
+  padding-block: $espacamento;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+.services {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  &__item {
+    background-color: $cor-secundaria;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+}
+
+.testimonial {
+  &__quote {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 700px;
+    background: $cor-depoimento;
+    border-left: 5px solid $cor-primaria;
+    font-style: italic;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+
+  &__input,
+  &__textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+
+  &__button {
+    @include botao-primario;
+  }
+}

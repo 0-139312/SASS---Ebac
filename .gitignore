@@ -1,0 +1,5 @@
+# Ignorar a pasta compilada (CSS gerado)
+css/
+
+# Ignorar a pasta de dependências do Node
+node_modules/

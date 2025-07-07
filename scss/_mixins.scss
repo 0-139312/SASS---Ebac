@@ -1,0 +1,20 @@
+@mixin centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin botao-primario {
+  background: $cor-primaria;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: $cor-hover-botao;
+  }
+}
